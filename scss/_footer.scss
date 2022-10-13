@@ -1,0 +1,19 @@
+footer {
+    background-color: $bgColor;
+    box-shadow: 5px 2px 5px $shadowBoxColor;
+
+    .footer--text {
+        text-align: center;
+        padding: $marginGeneral*.5;
+    }
+
+    .iconos-group {
+        align-items: center;        
+
+        .col-2 {
+            max-width: 60px;
+            min-width: 50px;
+            padding: $marginGeneral;
+        }
+    }
+}

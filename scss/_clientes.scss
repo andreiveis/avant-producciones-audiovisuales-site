@@ -1,0 +1,39 @@
+.main-clientes {
+
+    .card {
+        border-radius: 20px;
+        color: $textColor;
+        text-align: center;
+        background-color: $bgColor;
+        box-shadow: 3px 1px 5px $shadowBoxColor;
+
+        h4 {
+            color: $colorMain;
+        }
+
+        h5 {
+            padding: $marginGeneral;
+        }
+
+        .card-title {
+            font-weight: bold;
+
+        }
+
+        .card-text {
+            padding: $marginGeneral*1.5;
+            font-weight: lighter;
+        }
+
+        .card-img-top {
+            border-radius: 20px 20px 0px 0px;
+            box-shadow: 3px 1x 5px $shadowBoxColor;
+
+            &:hover {
+                opacity: 0.8;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+
+            }
+        }
+    }
+}

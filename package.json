@@ -1,0 +1,25 @@
+{
+  "name": "avant-producciones-audiovisuales",
+  "version": "1.0.0",
+  "description": "Proyecto final para Coder House donde se arma un sitio web para Avant Producciones Audiovisuales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreiveis/avant-producciones-audiovisuales.git"
+  },
+  "author": "Andrei Veis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreiveis/avant-producciones-audiovisuales/issues"
+  },
+  "homepage": "https://github.com/andreiveis/avant-producciones-audiovisuales#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

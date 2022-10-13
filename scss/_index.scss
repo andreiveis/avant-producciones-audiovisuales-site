@@ -1,0 +1,139 @@
+html {
+    body {
+        background: $mainGradient;
+        padding: $marginGeneral;
+
+        h1 {
+            color: $colorMain;
+            text-align: center;
+            padding-top: $marginGeneral*1.5;
+            padding-bottom: $marginGeneral*1.5;
+
+            .title-up {
+                text-transform: uppercase;
+                font-size: $fontSize*3;
+                letter-spacing: 4px;
+                line-height: 0.8;
+                font-weight: bold;
+            }
+
+            .title-down {
+                font-size: $fontSize*2;
+                letter-spacing: -1px;
+                font-weight: light;
+            }
+        }
+
+
+        h3 {
+            text-align: center;
+            margin-top: $marginGeneral;
+            color: $colorLogo3;
+        }
+
+        .subtitle-main {
+            margin-top: $marginGeneral*2;
+            margin-bottom: $marginGeneral*2;
+            font-size: $fontSize*2;
+        }
+
+
+        .carousel-caption {
+            bottom: 40%;
+            background-color: $colorLogo2;
+            opacity: 0.9;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px $shadowBoxColor;
+            border-radius: 20px;
+
+            h5 {
+                text-transform: uppercase;
+            }
+        }
+
+        .main-index {
+            background-color: $bgColor
+        }
+
+
+        .main-parrafos {
+            justify-content: space-around;
+            padding-bottom: 60px;
+            text-align: center;
+
+            h5 {
+                padding-top: 20px;
+            }
+
+            p {
+                padding: 20px, 5px, 20px, 5px;
+            }
+
+            .paragraphs-icons {
+                width: 45px;
+                margin: $marginGeneral;
+            }
+
+            .main-paragraphs-description {
+                border: 1px solid $colorMain;
+                border-radius: 20px;
+                max-width: 350px;
+                margin-top: 20px;
+                font-size: $fontSize*1.25;
+                padding: $marginGeneral*2;
+                box-shadow: 4px 4px 5px $shadowBoxColor;
+            }
+        }
+
+        .description-items {
+            height: auto;
+            background-image: url("../assets/orchestral-black-and-white.png");
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: 200%;
+            background-position-y: 80%;
+            background-position-x: 10%;
+            text-align: center;
+            text-shadow: 1px 1px $shadowBoxColor;
+            overflow-x: hidden;
+
+            h5 {
+                margin-top: 1.25em;
+                margin-bottom: 1.25em;
+                font-size: $fontSize*2
+            }
+
+            p {
+                margin: 10px 0px 15px 0px;
+                font-size: $fontSize*1.5
+            }
+        }
+
+        .clientes {
+            background-color: white;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            .nuestros-clientes-text {
+                background-color: $bgColor;
+                padding-top: $marginGeneral*2;
+                padding-bottom: $marginGeneral*2;
+            }
+
+            .imag-clientes {
+                max-width: 120px;
+                max-height: 90px;
+                margin: $marginGeneral*.8;
+            }
+        }
+
+    }
+
+    @media only screen and (max-width: 767.98px) {
+
+        html,
+        body {
+            padding: 0px;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.main-estudiomovil {
+    overflow-x: hidden;
+
+    h2 {
+        text-align: center;
+        margin: $marginGeneral*1.5;
+        font-size: $fontSize*2.5;
+        color: $colorMain;
+    }
+
+    .backgroung-theater {
+        background-image: url("../assets/sala-concierto-background.jpg");
+        background-repeat: no-repeat;
+        background-position-y: 40%;
+        background-position-x: center;
+        height: 50vh;
+        width: 100%;
+        margin-bottom: $marginGeneral*2;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .inner-text--estudio-movil {
+        background-color: rgba(173, 110, 39, 0.95);
+        box-shadow: 2px 2px 5px $shadowBoxColor;
+        border-radius: 20px;
+
+        h4,
+        h5 {
+            padding-bottom: $marginGeneral;
+            padding-top: $marginGeneral;
+        }
+    }
+
+    .descripcion-estudiomovil {
+        h3 {
+            padding: $marginGeneral;
+        }
+
+        p {
+            font-size: $fontSize;
+            text-align: center;
+            margin-bottom: $marginGeneral*5;
+            padding-left: $marginGeneral*2;
+            padding-right: $marginGeneral*2;
+        }
+    }
+
+    .ejemplo-estudiomovil {
+        padding: $marginGeneral*5;
+
+        h5 {
+            text-align: center;
+        }
+    }
+
+    .ejemplo-estudiomovil--texto {
+        padding: $marginGeneral*3;
+        background-color: $colorLogo2;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+
+        .ejemplo-estudiomovil--texto {
+            padding: 0px;
+            margin-top: 20px;
+        }
+    }
+
+    .videos-ejemplo {
+        text-align: center;
+        padding: $marginGeneral;
+    }
+
+    .button-estudio {
+        text-align: center;
+
+        .btn-primary {
+            background-color: $colorLogo2;
+
+            border-color: $colorLogo2;
+            border-radius: 5px;
+            margin: $marginGeneral*5;
+            width: 35%;
+            font-size: $fontSize*1.5;
+
+            a {
+                text-decoration: none;
+                color: $textColor;
+
+                &:hover {
+                    color: $colorLogo1;
+                }
+            }
+        }
+    }
+}

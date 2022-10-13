@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.form-label,
+.btn-primary {
+  color: aliceblue;
+  font-family: "Source Sans Pro", sans-serif; }
+
+header {
+  box-shadow: 5px 2px 5px #14171a;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 1em; }
+  header .logoHeader {
+    height: 3.5em; }
+  header .navbar {
+    height: auto; }
+  header .navbar-toggler {
+    border: 0px; }
+    header .navbar-toggler:hover {
+      border: 2px solid #ad6e27; }
+  header .navbar-dark .navbar-nav .nav-link {
+    text-transform: uppercase; }
+  header .nav-link {
+    padding: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
+  header .navbar-dark .navbar-nav .nav-link.active,
+  header .navbar-dark .navbar-nav .show > .nav-link {
+    color: #ad6e27; }
+    header .navbar-dark .navbar-nav .nav-link.active:hover,
+    header .navbar-dark .navbar-nav .show > .nav-link:hover {
+      color: #ad6e27; }
+  header .navbar-dark .navbar-nav .nav-link:focus,
+  header .navbar-dark .navbar-nav .nav-link:hover {
+    color: #c8ac38; }
+  header .dropdown-menu {
+    background-color: #212529; }
+    header .dropdown-menu .dropdown-item {
+      color: rgba(255, 255, 255, 0.55);
+      font-family: "Source Sans Pro", sans-serif;
+      text-transform: uppercase; }
+    header .dropdown-menu .dropdown-item:focus,
+    header .dropdown-menu .dropdown-item:hover {
+      color: #c8ac38;
+      background-color: #212529; }
+  header .dropdown-menu[data-bs-popper] {
+    width: fit-content;
+    left: -43%; }
+
+html body {
+  background: linear-gradient(45deg, #303336, #111316);
+  padding: 1em; }
+  html body h1 {
+    color: #b06e1a;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+    html body h1 .title-up {
+      text-transform: uppercase;
+      font-size: 3rem;
+      letter-spacing: 4px;
+      line-height: 0.8;
+      font-weight: bold; }
+    html body h1 .title-down {
+      font-size: 2rem;
+      letter-spacing: -1px;
+      font-weight: light; }
+  html body h3 {
+    text-align: center;
+    margin-top: 1em;
+    color: #c5a24c; }
+  html body .subtitle-main {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 2rem; }
+  html body .carousel-caption {
+    bottom: 40%;
+    background-color: #ad6e27;
+    opacity: 0.9;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #14171a;
+    border-radius: 20px; }
+    html body .carousel-caption h5 {
+      text-transform: uppercase; }
+  html body .main-index {
+    background-color: #212529; }
+  html body .main-parrafos {
+    justify-content: space-around;
+    padding-bottom: 60px;
+    text-align: center; }
+    html body .main-parrafos h5 {
+      padding-top: 20px; }
+    html body .main-parrafos p {
+      padding: 20px, 5px, 20px, 5px; }
+    html body .main-parrafos .paragraphs-icons {
+      width: 45px;
+      margin: 1em; }
+    html body .main-parrafos .main-paragraphs-description {
+      border: 1px solid #b06e1a;
+      border-radius: 20px;
+      max-width: 350px;
+      margin-top: 20px;
+      font-size: 1.25rem;
+      padding: 2em;
+      box-shadow: 4px 4px 5px #14171a; }
+  html body .description-items {
+    height: auto;
+    background-image: url("../assets/orchestral-black-and-white.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position-y: 80%;
+    background-position-x: 10%;
+    text-align: center;
+    text-shadow: 1px 1px #14171a;
+    overflow-x: hidden; }
+    html body .description-items h5 {
+      margin-top: 1.25em;
+      margin-bottom: 1.25em;
+      font-size: 2rem; }
+    html body .description-items p {
+      margin: 10px 0px 15px 0px;
+      font-size: 1.5rem; }
+  html body .clientes {
+    background-color: white;
+    justify-content: center;
+    margin-bottom: 30px; }
+    html body .clientes .nuestros-clientes-text {
+      background-color: #212529;
+      padding-top: 2em;
+      padding-bottom: 2em; }
+    html body .clientes .imag-clientes {
+      max-width: 120px;
+      max-height: 90px;
+      margin: 0.8em; }
+
+@media only screen and (max-width: 767.98px) {
+  html html,
+  html body {
+    padding: 0px; } }
+
+.main-clientes .card {
+  border-radius: 20px;
+  color: aliceblue;
+  text-align: center;
+  background-color: #212529;
+  box-shadow: 3px 1px 5px #14171a; }
+  .main-clientes .card h4 {
+    color: #b06e1a; }
+  .main-clientes .card h5 {
+    padding: 1em; }
+  .main-clientes .card .card-title {
+    font-weight: bold; }
+  .main-clientes .card .card-text {
+    padding: 1.5em;
+    font-weight: lighter; }
+  .main-clientes .card .card-img-top {
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 3px 1x 5px #14171a; }
+    .main-clientes .card .card-img-top:hover {
+      opacity: 0.8;
+      border: 2px solid rgba(255, 255, 255, 0.5); }
+
+.grid-reel {
+  overflow-x: hidden;
+  display: grid;
+  grid-gap: 15px;
+  padding: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: 300px;
+  grid-auto-flow: dense; }
+  .grid-reel img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block; }
+  .grid-reel div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .grid-reel div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 5px 2px 5px #14171a; }
+      .grid-reel div img:hover {
+        border: 2px solid rgba(255, 255, 255, 0.5); }
+  .grid-reel .wide {
+    grid-column: span 2; }
+  .grid-reel .tall {
+    grid-row: span 2; }
+  .grid-reel .big {
+    grid-column: span 2;
+    grid-row: span 2; }
+
+@media (max-width: 767.98px) {
+  .grid-reel {
+    grid-template-columns: 1fr; } }
+
+.main-estudiomovil {
+  overflow-x: hidden; }
+  .main-estudiomovil h2 {
+    text-align: center;
+    margin: 1.5em;
+    font-size: 2.5rem;
+    color: #b06e1a; }
+  .main-estudiomovil .backgroung-theater {
+    background-image: url("../assets/sala-concierto-background.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-position-x: center;
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .main-estudiomovil .inner-text--estudio-movil {
+    background-color: rgba(173, 110, 39, 0.95);
+    box-shadow: 2px 2px 5px #14171a;
+    border-radius: 20px; }
+    .main-estudiomovil .inner-text--estudio-movil h4,
+    .main-estudiomovil .inner-text--estudio-movil h5 {
+      padding-bottom: 1em;
+      padding-top: 1em; }
+  .main-estudiomovil .descripcion-estudiomovil h3 {
+    padding: 1em; }
+  .main-estudiomovil .descripcion-estudiomovil p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5em;
+    padding-left: 2em;
+    padding-right: 2em; }
+  .main-estudiomovil .ejemplo-estudiomovil {
+    padding: 5em; }
+    .main-estudiomovil .ejemplo-estudiomovil h5 {
+      text-align: center; }
+  .main-estudiomovil .ejemplo-estudiomovil--texto {
+    padding: 3em;
+    background-color: #ad6e27;
+    margin-top: 20px;
+    border-radius: 20px; }
+  @media only screen and (max-width: 767.98px) {
+    .main-estudiomovil .ejemplo-estudiomovil--texto {
+      padding: 0px;
+      margin-top: 20px; } }
+  .main-estudiomovil .videos-ejemplo {
+    text-align: center;
+    padding: 1em; }
+  .main-estudiomovil .button-estudio {
+    text-align: center; }
+    .main-estudiomovil .button-estudio .btn-primary {
+      background-color: #ad6e27;
+      border-color: #ad6e27;
+      border-radius: 5px;
+      margin: 5em;
+      width: 35%;
+      font-size: 1.5rem; }
+      .main-estudiomovil .button-estudio .btn-primary a {
+        text-decoration: none;
+        color: aliceblue; }
+        .main-estudiomovil .button-estudio .btn-primary a:hover {
+          color: #863f1e; }
+
+.main-contacto .info-contacto {
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color: aliceblue; }
+  .main-contacto .info-contacto .title {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    color: #b06e1a; }
+
+.main-contacto .mapa-contacto {
+  width: 100%;
+  height: 100%;
+  padding: 3em; }
+
+@media only screen and (max-width: 991.98px) {
+  .main-contacto .mapa-contacto {
+    min-height: 50vh; } }
+
+.main-contacto .form {
+  padding: 3em; }
+  .main-contacto .form .form-label {
+    color: aliceblue; }
+
+.main-contacto .form-control:focus:focus {
+  border: 2px solid #b06e1a;
+  box-shadow: 5px 2px 5px #14171a; }
+
+.main-contacto .btn-primary {
+  background-color: #ad6e27;
+  border-color: #ad6e27;
+  border-radius: 5px;
+  margin-right: 25px; }
+
+footer {
+  background-color: #212529;
+  box-shadow: 5px 2px 5px #14171a; }
+  footer .footer--text {
+    text-align: center;
+    padding: 0.5em; }
+  footer .iconos-group {
+    align-items: center; }
+    footer .iconos-group .col-2 {
+      max-width: 60px;
+      min-width: 50px;
+      padding: 1em; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #2c2b2b; }
+
+::-webkit-scrollbar-thumb {
+  background: #2125293d;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px; }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; }
