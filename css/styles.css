@@ -14,6 +14,9 @@ p,
 header {
   box-shadow: 5px 2px 5px #14171a;
   font-family: "Source Sans Pro", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   margin-bottom: 1em; }
   header .logoHeader {
     height: 3.5em; }
@@ -29,12 +32,15 @@ header {
     padding: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em; }
+    header .nav-link:hover {
+      border-bottom: 1px solid #863f1e; }
   header .navbar-dark .navbar-nav .nav-link.active,
   header .navbar-dark .navbar-nav .show > .nav-link {
     color: #ad6e27; }
     header .navbar-dark .navbar-nav .nav-link.active:hover,
     header .navbar-dark .navbar-nav .show > .nav-link:hover {
-      color: #ad6e27; }
+      color: #ad6e27;
+      border-bottom: 1px solid #863f1e; }
   header .navbar-dark .navbar-nav .nav-link:focus,
   header .navbar-dark .navbar-nav .nav-link:hover {
     color: #c8ac38; }
@@ -53,8 +59,14 @@ header {
     left: -43%; }
 
 html body {
-  background: linear-gradient(45deg, #303336, #111316);
-  padding: 1em; }
+  background: linear-gradient(45deg, #303336, #0e1013);
+  padding: 1em;
+  overflow-x: hidden; }
+  html body .logo-principal {
+    height: 9em;
+    object-fit: contain;
+    margin-top: 1.5em;
+    margin-bottom: 1em; }
   html body h1 {
     color: #b06e1a;
     text-align: center;
@@ -79,9 +91,9 @@ html body {
     margin-bottom: 2em;
     font-size: 2rem; }
   html body .carousel-caption {
-    bottom: 40%;
+    font-size: 1.5rem;
     background-color: #ad6e27;
-    opacity: 0.9;
+    opacity: 0.8;
     font-weight: bold;
     box-shadow: 2px 2px 5px #14171a;
     border-radius: 20px; }
@@ -89,6 +101,25 @@ html body {
       text-transform: uppercase; }
   html body .main-index {
     background-color: #212529; }
+  html body .carousel-control-next {
+    right: 2%; }
+  html body .carousel-control-prev {
+    left: 2%; }
+  html body .carousel-control-next,
+  html body .carousel-control-prev {
+    scale: 150%;
+    height: 60%;
+    width: 2.5vw;
+    top: 20%;
+    border-radius: 50px; }
+    html body .carousel-control-next:hover,
+    html body .carousel-control-prev:hover {
+      background-color: #c5a24c;
+      opacity: 0.3;
+      transition: opacity 0.1s ease 0s; }
+  html body .carousel-dark .carousel-control-next-icon,
+  html body .carousel-dark .carousel-control-prev-icon {
+    filter: none; }
   html body .main-parrafos {
     justify-content: space-around;
     padding-bottom: 60px;
@@ -216,7 +247,6 @@ html body {
     background-position-y: 40%;
     background-position-x: center;
     height: 50vh;
-    width: 100%;
     margin-bottom: 2em;
     align-items: center;
     justify-content: center;
@@ -285,14 +315,19 @@ html body {
 
 @media only screen and (max-width: 991.98px) {
   .main-contacto .mapa-contacto {
-    min-height: 50vh; } }
+    min-height: 50vh;
+    padding: 0px; } }
 
 .main-contacto .form {
   padding: 3em; }
   .main-contacto .form .form-label {
     color: aliceblue; }
 
-.main-contacto .form-control:focus:focus {
+@media only screen and (max-width: 767.98px) {
+  .main-contacto .form {
+    padding: 1em; } }
+
+.main-contacto .form-control:focus {
   border: 2px solid #b06e1a;
   box-shadow: 5px 2px 5px #14171a; }
 
@@ -327,3 +362,16 @@ footer {
   border-radius: 10px; }
   ::-webkit-scrollbar-thumb:hover {
     background: #888; }
+
+.back-to-top-icon {
+  position: fixed;
+  top: 93%;
+  left: 92%;
+  width: 50px;
+  opacity: 0.5; }
+  .back-to-top-icon:hover {
+    opacity: 0.6; }
+
+@media only screen and (max-width: 992px) {
+  .back-to-top-icon {
+    display: none; } }
