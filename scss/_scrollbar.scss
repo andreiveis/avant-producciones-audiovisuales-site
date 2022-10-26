@@ -7,10 +7,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background:#2125293d;
+    background: #2125293d;
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
+
     &:hover {
-        background: #888 ;
+        background: #888;
     }
 }

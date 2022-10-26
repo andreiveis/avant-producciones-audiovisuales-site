@@ -209,7 +209,6 @@ html body {
     box-shadow: 3px 1x 5px #14171a; }
     .main-clientes .card .card-img-top:hover {
       opacity: 0.8;
-      /* border: 1px solid rgba(255, 255, 255, 0.5); */
       box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5); }
 
 .grid-reel {

@@ -8,7 +8,7 @@ footer {
     }
 
     .iconos-group {
-        align-items: center;        
+        align-items: center;
 
         .col-2 {
             max-width: 60px;
@@ -16,10 +16,12 @@ footer {
             padding: $marginGeneral;
         }
     }
-    .logo-avant-footer{
+
+    .logo-avant-footer {
         max-height: 150px;
     }
-    .logo-redes{
+
+    .logo-redes {
         max-height: 35px;
         margin-top: $marginGeneral;
     }
