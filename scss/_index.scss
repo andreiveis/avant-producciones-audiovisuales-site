@@ -2,6 +2,17 @@ html {
     body {
         background: $mainGradient;
         padding: $marginGeneral;
+        overflow-x: hidden;
+
+
+        .logo-principal {
+
+            height: 9em;
+            object-fit: contain;
+            margin-top: 1.5em;
+            margin-bottom: 1em;
+
+        }
 
         h1 {
             color: $colorMain;
@@ -37,11 +48,11 @@ html {
             font-size: $fontSize*2;
         }
 
-
         .carousel-caption {
-            bottom: 40%;
+
+            font-size: $fontSize*1.5;
             background-color: $colorLogo2;
-            opacity: 0.9;
+            opacity: 0.8;
             font-weight: bold;
             box-shadow: 2px 2px 5px $shadowBoxColor;
             border-radius: 20px;
@@ -55,11 +66,42 @@ html {
             background-color: $bgColor
         }
 
+        .carousel-control-next {
+            right: 2%;
+        }
+
+        .carousel-control-prev {
+            left: 2%;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+
+            scale: 150%;
+            height: 60%;
+            width: 2.5vw;
+            top: 20%;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: $colorLogo3;
+                opacity: 0.3;
+                transition: opacity 0.1s ease 0s;
+            }
+        }
+
+        .carousel-dark .carousel-control-next-icon,
+        .carousel-dark .carousel-control-prev-icon {
+            filter: none;
+        }
 
         .main-parrafos {
+
             justify-content: space-around;
             padding-bottom: 60px;
             text-align: center;
+            padding-left: $marginGeneral;
+            padding-right: $marginGeneral;
 
             h5 {
                 padding-top: 20px;
