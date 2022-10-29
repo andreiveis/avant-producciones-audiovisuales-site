@@ -6,6 +6,7 @@
         margin: $marginGeneral*1.5;
         font-size: $fontSize*2.5;
         color: $colorMain;
+        font-weight: bold;
     }
 
     .backgroung-theater {
@@ -13,7 +14,7 @@
         background-repeat: no-repeat;
         background-position-y: 40%;
         background-position-x: center;
-        height: 50vh;    
+        height: 50vh;
         margin-bottom: $marginGeneral*2;
         align-items: center;
         text-align: center;
@@ -32,50 +33,71 @@
     }
 
     .descripcion-estudiomovil {
-        .descripcion-estudiomovil-article{
-            background-image: url("../assets/violin.webp");
-        }
+        .descripcion-estudiomovil-article {
+            background-image: url("../assets/violin_bg2.png");
+            background-repeat: no-repeat;
+            background-color: black;
+            text-shadow: 2px 2px 3px black;
 
-        
+            p{
+                font-size: $fontSize*1.25;    
+            }
+        }
 
         h3 {
             padding: $marginGeneral;
+            font-weight: bold;
         }
 
         p {
             font-size: $fontSize;
             text-align: center;
-            margin-bottom: $marginGeneral*5;
+            margin-bottom: $marginGeneral*2;
             padding-left: $marginGeneral*2;
             padding-right: $marginGeneral*2;
         }
     }
 
     .ejemplo-estudiomovil {
-        padding: $marginGeneral*5;
-        
+        padding: $marginGeneral*4;
+        background-color: rgb(23, 23, 23);
+        box-shadow: 5px 2px 5px $shadowBoxColor;
+        letter-spacing: 1px;
 
         h5 {
+            padding: $marginGeneral;
             text-align: center;
+            font-weight: bold;
         }
-    }
-
-    .ejemplo-estudiomovil--texto {
-        padding: $marginGeneral*3;
-        background-color: $colorLogo2;
-        margin-top: 20px;
-        border-radius: 20px;
-    }
-
-    @media only screen and (max-width: 767.98px) {
 
         .ejemplo-estudiomovil--texto {
-            padding: 0px;
-            margin-top: 20px;
+            padding: $marginGeneral*2;
+            background-color: $colorLogo2;
+            margin-top: 10%;
+            border-radius: 20px;
+            box-shadow: 5px 2px 5px $shadowBoxColor;
         }
     }
 
     .videos-ejemplo {
+        border: 1px solid $colorMain;
+        border-radius: 30px;
+        margin: $marginGeneral*2;
+
+        h3 {
+            margin: $marginGeneral*2;
+            font-weight: bold;
+        }
+
+        iframe {
+            scale: 1;
+            width: 100%;
+            height: $marginGeneral*25;
+            padding: $marginGeneral;
+        }
+    }
+
+    .videos-ejemplo-iframe {
         text-align: center;
         padding: $marginGeneral;
     }
@@ -85,12 +107,12 @@
 
         .btn-primary {
             background-color: $colorLogo2;
-
             border-color: $colorLogo2;
-            border-radius: 5px;
-            margin: $marginGeneral*5;
+            border-radius: 10px;
+            margin: $marginGeneral*4;
             width: 35%;
             font-size: $fontSize*1.5;
+
 
             a {
                 text-decoration: none;

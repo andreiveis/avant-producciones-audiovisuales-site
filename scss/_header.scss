@@ -4,10 +4,18 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    margin-bottom: $marginGeneral;    
+    margin-bottom: $marginGeneral;
+
+    @media only screen and (max-width: 412px) {
+        position: static;
+    }
 
     .logoHeader {
-        height: $marginGeneral*3.5;
+        height: $marginGeneral*3;
+
+        @media only screen and (max-width: 767.98px) {
+            height: $marginGeneral*1.5;
+        }
     }
 
     .navbar {
