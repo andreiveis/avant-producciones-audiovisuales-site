@@ -13,11 +13,9 @@
         background-repeat: no-repeat;
         background-position-y: 40%;
         background-position-x: center;
-        height: 50vh;
-    
+        height: 50vh;    
         margin-bottom: $marginGeneral*2;
         align-items: center;
-        justify-content: center;
         text-align: center;
     }
 
@@ -34,6 +32,12 @@
     }
 
     .descripcion-estudiomovil {
+        .descripcion-estudiomovil-article{
+            background-image: url("../assets/violin.webp");
+        }
+
+        
+
         h3 {
             padding: $marginGeneral;
         }
@@ -49,6 +53,7 @@
 
     .ejemplo-estudiomovil {
         padding: $marginGeneral*5;
+        
 
         h5 {
             text-align: center;

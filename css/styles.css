@@ -44,19 +44,6 @@ header {
   header .navbar-dark .navbar-nav .nav-link:focus,
   header .navbar-dark .navbar-nav .nav-link:hover {
     color: #c8ac38; }
-  header .dropdown-menu {
-    background-color: #212529; }
-    header .dropdown-menu .dropdown-item {
-      color: rgba(255, 255, 255, 0.55);
-      font-family: "Source Sans Pro", sans-serif;
-      text-transform: uppercase; }
-    header .dropdown-menu .dropdown-item:focus,
-    header .dropdown-menu .dropdown-item:hover {
-      color: #c8ac38;
-      background-color: #212529; }
-  header .dropdown-menu[data-bs-popper] {
-    width: fit-content;
-    left: -43%; }
 
 html body {
   background: linear-gradient(45deg, #303336, #0e1013);
@@ -263,7 +250,6 @@ html body {
     height: 50vh;
     margin-bottom: 2em;
     align-items: center;
-    justify-content: center;
     text-align: center; }
   .main-estudiomovil .inner-text--estudio-movil {
     background-color: rgba(173, 110, 39, 0.95);
@@ -273,6 +259,8 @@ html body {
     .main-estudiomovil .inner-text--estudio-movil h5 {
       padding-bottom: 1em;
       padding-top: 1em; }
+  .main-estudiomovil .descripcion-estudiomovil .descripcion-estudiomovil-article {
+    background-image: url("../assets/violin.webp"); }
   .main-estudiomovil .descripcion-estudiomovil h3 {
     padding: 1em; }
   .main-estudiomovil .descripcion-estudiomovil p {
@@ -333,7 +321,11 @@ html body {
     padding: 0px; } }
 
 .main-contacto .form {
-  padding: 3em; }
+  padding: 3em;
+  background-image: url(../assets/segunda-camara-imagen-fondo-baja.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-position-y: 20%; }
   .main-contacto .form .form-label {
     color: aliceblue; }
 

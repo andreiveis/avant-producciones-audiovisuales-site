@@ -28,6 +28,10 @@
 
     .form {
         padding: $marginGeneral*3;
+        background-image: url(../assets/segunda-camara-imagen-fondo-baja.png);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-y: 20%;
 
         .form-label {
             color: $textColor;
