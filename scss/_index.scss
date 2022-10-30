@@ -10,27 +10,8 @@ html {
             object-fit: contain;
             margin-top: 1.5em;
             margin-bottom: 1em;
-        }
-
-        h1 {
-            color: $colorMain;
-            text-align: center;
-            padding-top: $marginGeneral*1.5;
-            padding-bottom: $marginGeneral*1.5;
-
-            .title-up {
-                text-transform: uppercase;
-                font-size: $fontSize*3;
-                letter-spacing: 4px;
-                line-height: 0.8;
-                font-weight: bold;
-            }
-
-            .title-down {
-                font-size: $fontSize*2;
-                letter-spacing: -1px;
-                font-weight: light;
-            }
+            position: relative;
+            left: -3%;
         }
 
         h3 {
@@ -100,8 +81,6 @@ html {
             padding-left: $marginGeneral;
             padding-right: $marginGeneral;
 
-
-
             h5 {
                 padding-top: 20px;
             }
@@ -131,12 +110,36 @@ html {
             background-image: url("../assets/orchestral-black-and-white.png");
             background-color: black;
             background-repeat: no-repeat;
+            background-attachment: fixed;
             background-size: 200%;
             background-position-y: 80%;
             background-position-x: 10%;
             text-align: center;
             text-shadow: 1px 1px $shadowBoxColor;
             overflow-x: hidden;
+
+
+            h1 {
+                color: $colorMain;
+                text-align: center;
+                padding-top: $marginGeneral*1.5;
+                padding-bottom: $marginGeneral*1.5;
+    
+                .title-up {
+                    text-transform: uppercase;
+                    font-size: $fontSize*3;
+                    letter-spacing: 4px;
+                    line-height: 0.8;
+                    font-weight: bold;
+                }
+    
+                .title-down {
+                    font-size: $fontSize*2;
+                    letter-spacing: -1px;
+                    font-weight: light;
+                }
+            }
+            
 
             h5 {
                 margin-top: 1.25em;
