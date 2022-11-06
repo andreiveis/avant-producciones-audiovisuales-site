@@ -1,7 +1,9 @@
 .main-clientes {
+    overflow-y: hidden;
 
     .card {
         border-radius: 20px;
+        border: 1px solid $colorLogo1;
         color: $textColor;
         text-align: center;
         background-color: $bgColor;

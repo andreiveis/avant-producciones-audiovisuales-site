@@ -1,18 +1,14 @@
 footer {
-
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.911);
     box-shadow: 5px 2px 5px $shadowBoxColor;
 
     p{
         color: $textColor;
     }
 
-
     .footer--text {
         text-align: center;
         padding: $marginGeneral*.5;
-
-
     }
 
     .iconos-group {

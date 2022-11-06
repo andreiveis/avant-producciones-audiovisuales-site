@@ -16,22 +16,14 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  margin-bottom: 1em;
-  /* .navbar>.container,
-    .navbar>.container-fluid,
-    .navbar>.container-lg,
-    .navbar>.container-md,
-    .navbar>.container-sm,
-    .navbar>.container-xl,
-    .navbar>.container-xxl {
-
-        background: red;
-    } */ }
+  margin-bottom: 1em; }
   header .bg-dark {
-    background: linear-gradient(to right, #000000da, #ffffff00, #ffffff00, #ffffff00, #000000ec, #232323ec) !important; }
+    background: linear-gradient(to right, #000000da, #ffffff00, #ffffff00, #ffffff00, #000000f1, #232323ec) !important; }
     @media only screen and (max-width: 991.98px) {
       header .bg-dark {
-        background: none !important; } }
+        background: linear-gradient(to right, #000000da, #ffffff00, #ffffff00, #ffffff00, #000000ec) !important; }
+        header .bg-dark ul {
+          background: linear-gradient(to right, #000000f1, #ffffff00); } }
   header .logoHeader {
     height: 3em; }
     @media only screen and (max-width: 767.98px) {
@@ -134,7 +126,7 @@ html body {
       box-shadow: 4px 4px 5px #14171a; }
   html body .description-items {
     height: auto;
-    background-image: url("../assets/orchestral-black-and-white.webp");
+    background-image: url("../assets/backgrounds/orchestral-black-and-white.webp");
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -184,39 +176,42 @@ html body {
   html body {
     padding: 0px; } }
 
-.main-clientes .card {
-  border-radius: 20px;
-  color: aliceblue;
-  text-align: center;
-  background-color: #212529;
-  box-shadow: 3px 1px 5px #14171a; }
-  .main-clientes .card .div-play-icon {
-    position: relative; }
-    .main-clientes .card .div-play-icon .play-icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 10;
-      opacity: 0.9;
-      display: none; }
-    .main-clientes .card .div-play-icon:hover .play-icon {
-      display: block; }
-  .main-clientes .card h4 {
-    color: #b06e1a; }
-  .main-clientes .card h5 {
-    padding: 1em; }
-  .main-clientes .card .card-title {
-    font-weight: bold; }
-  .main-clientes .card .card-text {
-    padding: 1.5em;
-    font-weight: lighter; }
-  .main-clientes .card .card-img-top {
-    border-radius: 20px 20px 0px 0px;
-    box-shadow: 3px 1x 5px #14171a; }
-    .main-clientes .card .card-img-top:hover {
-      opacity: 0.8;
-      box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5); }
+.main-clientes {
+  overflow-y: hidden; }
+  .main-clientes .card {
+    border-radius: 20px;
+    border: 1px solid #863f1e;
+    color: aliceblue;
+    text-align: center;
+    background-color: #212529;
+    box-shadow: 3px 1px 5px #14171a; }
+    .main-clientes .card .div-play-icon {
+      position: relative; }
+      .main-clientes .card .div-play-icon .play-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0.9;
+        display: none; }
+      .main-clientes .card .div-play-icon:hover .play-icon {
+        display: block; }
+    .main-clientes .card h4 {
+      color: #b06e1a; }
+    .main-clientes .card h5 {
+      padding: 1em; }
+    .main-clientes .card .card-title {
+      font-weight: bold; }
+    .main-clientes .card .card-text {
+      padding: 1.5em;
+      font-weight: lighter; }
+    .main-clientes .card .card-img-top {
+      border-radius: 20px 20px 0px 0px;
+      box-shadow: 3px 1x 5px #14171a; }
+      .main-clientes .card .card-img-top:hover {
+        opacity: 0.8;
+        box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5); }
 
 .main-reel {
   overflow-y: hidden; }
@@ -246,7 +241,7 @@ html body {
     color: #b06e1a;
     font-weight: bold; }
   .main-estudiomovil .backgroung-theater {
-    background-image: url("../assets/sala-concierto-background.webp");
+    background-image: url("../assets/backgrounds/sala-concierto-background.webp");
     background-repeat: no-repeat;
     background-position-y: 40%;
     background-position-x: center;
@@ -264,7 +259,7 @@ html body {
       padding-bottom: 1em;
       padding-top: 1em; }
   .main-estudiomovil .descripcion-estudiomovil .descripcion-estudiomovil-article {
-    background-image: url("../assets/violin_bg2.webp");
+    background-image: url("../assets/backgrounds/violin_bg2.webp");
     background-repeat: no-repeat;
     background-color: black;
     text-shadow: 2px 2px 3px black; }
@@ -352,7 +347,7 @@ html body {
 
 .main-contacto .form {
   padding: 3em;
-  background-image: url(../assets/segunda-camara-imagen-fondo-baja.webp);
+  background-image: url(../assets/backgrounds/segunda-camara-imagen-fondo-baja.webp);
   background-position-x: center;
   background-repeat: no-repeat;
   background-position-y: 20%;
@@ -375,7 +370,7 @@ html body {
   margin-right: 25px; }
 
 footer {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.911);
   box-shadow: 5px 2px 5px #14171a; }
   footer p {
     color: aliceblue; }
