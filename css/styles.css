@@ -12,15 +12,26 @@ p,
   font-family: "Source Sans Pro", sans-serif; }
 
 header {
-  box-shadow: 5px 2px 5px #14171a;
   font-family: "Source Sans Pro", sans-serif;
   position: sticky;
   top: 0;
   z-index: 10;
-  margin-bottom: 1em; }
-  @media only screen and (max-width: 412px) {
-    header {
-      position: static; } }
+  margin-bottom: 1em;
+  /* .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+
+        background: red;
+    } */ }
+  header .bg-dark {
+    background: linear-gradient(to right, #000000da, #ffffff00, #ffffff00, #ffffff00, #000000ec, #232323ec) !important; }
+    @media only screen and (max-width: 991.98px) {
+      header .bg-dark {
+        background: none !important; } }
   header .logoHeader {
     height: 3em; }
     @media only screen and (max-width: 767.98px) {
@@ -123,7 +134,7 @@ html body {
       box-shadow: 4px 4px 5px #14171a; }
   html body .description-items {
     height: auto;
-    background-image: url("../assets/orchestral-black-and-white.png");
+    background-image: url("../assets/orchestral-black-and-white.webp");
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -207,11 +218,24 @@ html body {
       opacity: 0.8;
       box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5); }
 
-.main-reel img {
-  border-radius: 25px;
-  box-shadow: 5px 2px 5px #14171a; }
-  .main-reel img:hover {
-    border-color: 2px solid white; }
+.main-reel {
+  overflow-y: hidden; }
+  .main-reel .gallery-images img {
+    border-radius: 25px;
+    box-shadow: 5px 2px 5px #14171a;
+    margin-top: 5px; }
+    .main-reel .gallery-images img:hover {
+      outline: 1px solid whitesmoke;
+      scale: 101%;
+      box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.7); }
+    @media only screen and (max-width: 767.98px) {
+      .main-reel .gallery-images img {
+        scale: 85%; } }
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0); }
+  .modal-content img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); }
 
 .main-estudiomovil {
   overflow-x: hidden; }
@@ -222,7 +246,7 @@ html body {
     color: #b06e1a;
     font-weight: bold; }
   .main-estudiomovil .backgroung-theater {
-    background-image: url("../assets/sala-concierto-background.jpg");
+    background-image: url("../assets/sala-concierto-background.webp");
     background-repeat: no-repeat;
     background-position-y: 40%;
     background-position-x: center;
@@ -240,7 +264,7 @@ html body {
       padding-bottom: 1em;
       padding-top: 1em; }
   .main-estudiomovil .descripcion-estudiomovil .descripcion-estudiomovil-article {
-    background-image: url("../assets/violin_bg2.png");
+    background-image: url("../assets/violin_bg2.webp");
     background-repeat: no-repeat;
     background-color: black;
     text-shadow: 2px 2px 3px black; }
@@ -260,6 +284,8 @@ html body {
     background-color: #171717;
     box-shadow: 5px 2px 5px #14171a;
     letter-spacing: 1px; }
+    .main-estudiomovil .ejemplo-estudiomovil iframe {
+      scale: 115%; }
     .main-estudiomovil .ejemplo-estudiomovil h5 {
       padding: 1em;
       text-align: center;
@@ -274,6 +300,9 @@ html body {
     border: 1px solid #b06e1a;
     border-radius: 30px;
     margin: 2em; }
+    @media only screen and (max-width: 991.98px) {
+      .main-estudiomovil .videos-ejemplo {
+        margin: 20px 0px 20px; } }
     .main-estudiomovil .videos-ejemplo h3 {
       margin: 2em;
       font-weight: bold; }
@@ -318,11 +347,12 @@ html body {
 @media only screen and (max-width: 991.98px) {
   .main-contacto .mapa-contacto {
     min-height: 50vh;
-    padding: 0px; } }
+    margin: 0px 0px 30px;
+    scale: 105%; } }
 
 .main-contacto .form {
   padding: 3em;
-  background-image: url(../assets/segunda-camara-imagen-fondo-baja.png);
+  background-image: url(../assets/segunda-camara-imagen-fondo-baja.webp);
   background-position-x: center;
   background-repeat: no-repeat;
   background-position-y: 20%;
@@ -345,8 +375,10 @@ html body {
   margin-right: 25px; }
 
 footer {
-  background-color: #212529;
+  background-color: black;
   box-shadow: 5px 2px 5px #14171a; }
+  footer p {
+    color: aliceblue; }
   footer .footer--text {
     text-align: center;
     padding: 0.5em; }
@@ -357,10 +389,12 @@ footer {
       min-width: 50px;
       padding: 1em; }
   footer .logo-avant-footer {
-    max-height: 150px; }
+    max-height: 130px; }
   footer .logo-redes {
-    max-height: 35px;
+    max-height: 30px;
     margin-top: 1em; }
+  footer ul {
+    list-style: none; }
 
 ::-webkit-scrollbar {
   width: 10px; }

@@ -1,9 +1,32 @@
 .main-reel {
-    img{
-        border-radius: 25px;
-        box-shadow: 5px 2px 5px $shadowBoxColor;
-        &:hover{
-            border-color: 2px solid white;
+    overflow-y: hidden;
+
+
+    .gallery-images {
+        img {
+            border-radius: 25px;
+            box-shadow: 5px 2px 5px $shadowBoxColor;
+            margin-top: 5px;
+
+            &:hover {
+                outline: 1px solid whitesmoke;
+                scale: 101%;
+                box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.7);
+            }
+
+            @media only screen and (max-width: 767.98px) {
+                scale: 85%;
+            }
         }
     }
+}
+
+.modal-content {
+    img {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+        ;
+    }
+
+    background-color: rgba(black, $alpha: 0);
+
 }

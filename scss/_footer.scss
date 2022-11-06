@@ -1,10 +1,18 @@
 footer {
-    background-color: $bgColor;
+
+    background-color: black;
     box-shadow: 5px 2px 5px $shadowBoxColor;
+
+    p{
+        color: $textColor;
+    }
+
 
     .footer--text {
         text-align: center;
         padding: $marginGeneral*.5;
+
+
     }
 
     .iconos-group {
@@ -18,11 +26,15 @@ footer {
     }
 
     .logo-avant-footer {
-        max-height: 150px;
+        max-height: 130px;
     }
 
     .logo-redes {
-        max-height: 35px;
+        max-height: 30px;
         margin-top: $marginGeneral;
+    }
+
+    ul {
+        list-style: none;
     }
 }

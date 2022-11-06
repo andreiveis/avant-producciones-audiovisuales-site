@@ -10,7 +10,7 @@
     }
 
     .backgroung-theater {
-        background-image: url("../assets/sala-concierto-background.jpg");
+        background-image: url("../assets/sala-concierto-background.webp");
         background-repeat: no-repeat;
         background-position-y: 40%;
         background-position-x: center;
@@ -36,7 +36,7 @@
 
     .descripcion-estudiomovil {
         .descripcion-estudiomovil-article {
-            background-image: url("../assets/violin_bg2.png");
+            background-image: url("../assets/violin_bg2.webp");
             background-repeat: no-repeat;
             background-color: black;
             text-shadow: 2px 2px 3px black;
@@ -66,6 +66,10 @@
         box-shadow: 5px 2px 5px $shadowBoxColor;
         letter-spacing: 1px;
 
+        iframe {
+            scale: 115%;
+        }
+
         h5 {
             padding: $marginGeneral;
             text-align: center;
@@ -85,6 +89,10 @@
         border: 1px solid $colorMain;
         border-radius: 30px;
         margin: $marginGeneral*2;
+
+        @media only screen and (max-width: 991.98px) {
+            margin: 20px 0px 20px;
+        }
 
         h3 {
             margin: $marginGeneral*2;

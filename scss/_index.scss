@@ -107,7 +107,7 @@ html {
 
         .description-items {
             height: auto;
-            background-image: url("../assets/orchestral-black-and-white.png");
+            background-image: url("../assets/orchestral-black-and-white.webp");
             background-color: black;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -124,7 +124,7 @@ html {
                 text-align: center;
                 padding-top: $marginGeneral*1.5;
                 padding-bottom: $marginGeneral*1.5;
-    
+
                 .title-up {
                     text-transform: uppercase;
                     font-size: $fontSize*3;
@@ -132,14 +132,14 @@ html {
                     line-height: 0.8;
                     font-weight: bold;
                 }
-    
+
                 .title-down {
                     font-size: $fontSize*2;
                     letter-spacing: -1px;
                     font-weight: light;
                 }
             }
-            
+
 
             h5 {
                 margin-top: 1.25em;

@@ -22,13 +22,14 @@
     @media only screen and (max-width: 991.98px) {
         .mapa-contacto {
             min-height: 50vh;
-            padding: 0px;
+            margin: 0px 0px 30px;
+            scale: 105%;
         }
     }
 
     .form {
         padding: $marginGeneral*3;
-        background-image: url(../assets/segunda-camara-imagen-fondo-baja.png);
+        background-image: url(../assets/segunda-camara-imagen-fondo-baja.webp);
         background-position-x: center;
         background-repeat: no-repeat;
         background-position-y: 20%;
